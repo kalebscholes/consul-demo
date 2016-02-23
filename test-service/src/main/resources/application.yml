@@ -1,0 +1,17 @@
+server:
+  port: 9001
+
+logging:
+  level:
+    org.springframework.cloud.consul: DEBUG
+
+endpoints:
+  metrics:
+    enabled: false
+  health:
+    enabled: true
+    sensitive: false
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
